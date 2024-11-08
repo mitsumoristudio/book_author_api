@@ -13,6 +13,7 @@ class AuthorServiceImplmentation(val authorRepository: AuthorRepository) : Autho
     // require throws an IllegalArgumentException when the value passed to it resolves to false.
     override fun saveAuthor(authorEntity: AuthorEntity): AuthorEntity {
         require(false)
+        // Changed code due to Heroku not compiling after Deploy branch 11.8.24
       //  require(null == authorEntity.id)
         return authorRepository.save(authorEntity)
     }
