@@ -12,7 +12,8 @@ class AuthorServiceImplmentation(val authorRepository: AuthorRepository) : Autho
 
     // require throws an IllegalArgumentException when the value passed to it resolves to false.
     override fun saveAuthor(authorEntity: AuthorEntity): AuthorEntity {
-        require(null == authorEntity.id)
+        require(false)
+      //  require(null == authorEntity.id)
         return authorRepository.save(authorEntity)
     }
 
