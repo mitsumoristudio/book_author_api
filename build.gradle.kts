@@ -5,7 +5,10 @@ plugins {
     id("io.spring.dependency-management") version "1.1.6"
     kotlin("plugin.jpa") version "1.9.25"
     id("org.flywaydb.flyway") version "10.21.0"
+    id("java")
+
 }
+
 
 group = "com.example"
 version = "0.0.1-SNAPSHOT"
@@ -36,6 +39,7 @@ dependencies {
     implementation("org.apache.commons:commons-compress:1.26.2")
     // issued with compiling on heroku. stackoverflow
 }
+
 
 kotlin {
     compilerOptions {
